@@ -6,13 +6,13 @@ if __name__ == "__main__":
 
     # =============== Loads a frame of the camera which captures the road ===============#
     image = cv2.imread("sample.png")
-    # cv2.imshow("Basic Image", image)
+    cv2.imshow("Basic Image", image)
     cv2.waitKey(0)
 
     # =============== Transforms the loaded frame to gray scale =========================#
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    # cv2.imshow("Grayscaled Image", gray)
+    cv2.imshow("Grayscaled Image", gray)
     cv2.waitKey(0)
 
     # =============== Blurs the grayed out image =======================================#
